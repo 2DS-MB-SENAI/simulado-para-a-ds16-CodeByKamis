@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import User
+from .models import Usuario
 
 class UserinhoAdmin(UserAdmin):
     list_display = ('telefone',)
@@ -13,5 +13,5 @@ class UserinhoAdmin(UserAdmin):
         (None, {'fields':('telefone',)}),
     )
 
-admin.site.register(User, UserinhoAdmin)
+admin.site.register(Usuario, UserinhoAdmin)
 # Register your models here.
