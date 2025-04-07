@@ -6,11 +6,11 @@ class UserinhoAdmin(UserAdmin):
     list_display = ('telefone')
 
     fieldsets = UserAdmin.fieldsets + (
-        (None, {'fields': ('telefone')})
+        (None, {'fields': ('telefone',)}),
     )
 
     add_fieldsets = UserAdmin.add_fieldsets + (
-        (None, {'fields':('telefone')})
+        (None, {'fields':('telefone',)}),
     )
 
 admin.site.register(User, UserinhoAdmin)
