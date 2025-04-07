@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 from .models import User
 
 class UserinhoAdmin(UserAdmin):
-    list_display = ('telefone')
+    list_display = ('telefone',)
 
     fieldsets = UserAdmin.fieldsets + (
         (None, {'fields': ('telefone',)}),
