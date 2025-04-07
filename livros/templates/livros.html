@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>Livros</h1>
+
+    <ul>
+        {% for livraria in livrarias %}
+        <li>
+        <h2>{{ livraria.titulo }}</h2>
+        <p>{{ livraria.autor|slice:":30" }}...</p>
+        <p><a href="#">Leia mais</a></p>
+        </li>
+        {% endfor %}
+        </ul>
 </body>
 </html>
