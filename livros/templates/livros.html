@@ -9,7 +9,7 @@
     <h1>Livros</h1>
 
     <ul>
-        {% for livraria in livrarias %}
+        {% for livrarias in livraria %}
         <li>
         <h2>{{ livraria.titulo }}</h2>
         <p>{{ livraria.autor|slice:":30" }}...</p>
