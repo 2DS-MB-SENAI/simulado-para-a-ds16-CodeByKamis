@@ -2,6 +2,6 @@ from django.shortcuts import render
 from .models import Livro
 def listar_livros(request):
     livraria = Livro.objects.all().order_by('-data_criacao')
-    return render(request, 'templates/livros.html', {'livraria':livraria})
+    return render(request, '/livros.html', {'livraria':livraria})
 
 # Create your views here.
